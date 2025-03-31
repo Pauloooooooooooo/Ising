@@ -48,3 +48,19 @@ ising-abc/
 ├── requirements.txt            # Required Python packages
 └── README.md                   # This file
 ```
+
+## Key Features
+
+- Modular and extensible code
+- Transparent comparison between ABC and MCMC-based inference
+- Statistical visualizations (histograms, chains, trajectories)
+- Practical demonstration of likelihood-free Bayesian inference
+
+## Author
+
+Developed by **[Your Name]** as part of a statistical modeling project.  
+Feel free to reach out via GitHub or email for questions or collaboration opportunities.
+
+---
+
+*This repository demonstrates applied Bayesian computation using ABC methods on a classic probabilistic model, with a strong emphasis on implementation quality, inference clarity, and reproducibility.*
