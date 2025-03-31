@@ -36,4 +36,15 @@ Where:
 
 ## Repository Structure
 
-<pre> ```text ising-abc/ ├── src/ # Python modules │ ├── gibbs.py # Gibbs sampler │ ├── abc_reject.py # ABC-Reject algorithm │ ├── mcmc_abc.py # MCMC-ABC implementations │ └── utils.py # Helper functions ├── ising_abc_mcmc.ipynb # Complete notebook with results ├── figures/ # Output plots ├── requirements.txt # Required Python packages └── README.md # This file ``` </pre>
+```text
+ising-abc/
+├── src/                        # Python modules
+│   ├── gibbs.py                # Gibbs sampler
+│   ├── abc_reject.py           # ABC-Reject algorithm
+│   ├── mcmc_abc.py             # MCMC-ABC implementations
+│   └── utils.py                # Helper functions
+├── ising_abc_mcmc.ipynb        # Complete notebook with results
+├── figures/                    # Output plots
+├── requirements.txt            # Required Python packages
+└── README.md                   # This file
+```
