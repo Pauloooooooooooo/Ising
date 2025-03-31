@@ -58,7 +58,7 @@ ising-abc/
 
 ## Author
 
-Developed by **[Your Name]** as part of a statistical modeling project.  
+Developed by **[Paul Paolucci]** as part of a statistical modeling project.  
 Feel free to reach out via GitHub or email for questions or collaboration opportunities.
 
 ---
