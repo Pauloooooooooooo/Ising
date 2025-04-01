@@ -1,11 +1,6 @@
 # src/abc_reject.py
 """ABC reject for the Ising model"""
-
-# Statistique sommaire (suffisante)
-def sufficient_statistic(X):
-    sum_x = X.sum()
-    voisins_egaux = np.sum(X[:, :-1]==X[:, 1:]) + np.sum(X[:-1, :]==X[1:, :])
-    return np.array([sum_x, voisins_egaux])
+from src.utils import sufficient_statistic
 
 def ABC_reject_final(X_obs, alpha_prior, beta_prior, N, epsilon, n_iter, gibbs_iter):
     accepted_params = []

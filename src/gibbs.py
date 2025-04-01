@@ -26,3 +26,19 @@ def gibbs_sampler_ising(alpha, beta, N, iterations):
                 X[i,j] = np.random.rand() < p
 
     return X
+
+def gibbs_sampler_ising_periodique_fast(alpha, beta, N, iterations):
+
+    X = np.random.choice([0, 1], size=(N, N))
+
+    for _ in range(iterations):
+        voisins = (
+            np.roll(X, 1, axis=0) + np.roll(X, -1, axis=0) +                  # commande qui permet de faire la somme des 4 matrices des voisins (on décale à droite, gauche, haut et bas)
+            np.roll(X, 1, axis=1) + np.roll(X, -1, axis=1)                    # On se retouve avec un mlatrice contenant des nbs entre 0 et 4
+        )
+        p1 = np.exp(alpha + beta * voisins)
+        p0 = np.exp(beta * (4 - voisins))
+        proba = p1 / (p1 + p0)
+        X = (np.random.rand(N, N) < proba).astype(int)
+
+    return X
